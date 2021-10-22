@@ -16,29 +16,19 @@
         <span>
           <img src="img/build.svg" alt="Selo Rocketseat" />
         </span>
-        <img src="img/Avatar.png" alt="Foto pessoal" />
+        <img src="#" alt="Foto pessoal" id="userImagem" />
       </div>
 
       <div class="container">
-        <h1 id="userName">Wendel Santos</h1>
-        <a href="https://github.com/WendelSantosNunes" target="_blank">
+        <h1 id="userName">Wendel</h1>
+        <a id="userLinkGitHub" href="#" target="_blank">
           <img src="img/github.svg" alt="icone github" />
-          WendelNunes
+          <span id="userLogin">Wendel</span>
         </a>
-        <p>An instructor focused on helping pople start programming for web</p>
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
         <ul id="socialLinks">
-          <li class="youtube">
-            <a href="https:youtube.com/maykbrito" target="_blank">
-              <img src="img/youtube.svg" alt="Ícone do youtube" />
-            </a>
-          </li>
-
-          <li class="facebook">
-            <a href="https:facebook.com/maykbrito" target="_blank">
-              <img src="img/facebook.svg" alt="Ícone do youtube" />
-            </a>
-          </li>
-
           <li class="instagram">
             <a href="https://www.instagram.com/wendelnunes1/ " target="_blank">
               <img src="img/instagram.svg" alt="Ícone do youtube" />
@@ -53,24 +43,7 @@
         </ul>
       </div>
     </main>
-    <script>
-      const linksSocialMedia = {
-        github: 'WendelSantosNunes',
-        youtube: 'jakelinygracielly',
-        facebook: 'maykbrito',
-        instagram: 'wendelnunes1',
-        twitter: 'WendelN96410536'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
 
