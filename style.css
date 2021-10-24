@@ -19,9 +19,10 @@ body {
 }
 
 main {
-  background: url(img/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(img/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
 }
 
 .container {
@@ -76,4 +77,28 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+li {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+li:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@media (min-width: 720px) {
+  main {
+    background: url(img/background_Desktop.svg) no-repeat center/cover;
+    background-color: black;
+  }
+}
+
+@media (min-width: 960px) {
+  /* estilos versão desktop */
+  /* main {
+    background: url(img/background.png) no-repeat center/cover;
+  } */
 }
