@@ -95,10 +95,3 @@ li:hover {
     background-color: black;
   }
 }
-
-@media (min-width: 960px) {
-  /* estilos versão desktop */
-  /* main {
-    background: url(img/background.png) no-repeat center/cover;
-  } */
-}
